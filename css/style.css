@@ -1,0 +1,315 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.link {
+  color: black;
+  font-weight: bold;
+}
+
+body {
+  margin: auto auto;
+  padding: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    width: 50%;
+  }
+}
+
+section {
+  margin-top: 10px;
+  border-top: 3px solid black;
+}
+
+.text__header {
+  text-transform: capitalize;
+  font-size: 1.9em;
+  padding-top: 20px;
+}
+
+.avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.avatar__image {
+  padding: 10px;
+  background-image: url("../assets/images/avatar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+}
+
+.avatar__links {
+  list-style: none;
+  padding: 0px;
+}
+
+.list__closed {
+  height: 0px;
+  position: absolute;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(92, 91, 87, 0.9);
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
+}
+
+.text__uppercase {
+  text-transform: uppercase;
+}
+
+/*!Education*/
+.education__header__wrapper {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.education__toggler {
+  font-weight: bold;
+  font-size: 2em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
+}
+
+.education__transformed {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.education__list {
+  border-top: 2px solid black;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.education__list {
+  margin-top: 10px;
+  padding: 20px 40px;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.education__item {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/*Education!*/
+/*!Slider*/
+.projects__slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projetcs__slides__arrow {
+  height: 30%;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 3em;
+  cursor: pointer;
+  display: none;
+}
+
+.projetcs__slides {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+}
+
+.projetcs__slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.projetcs__slide__description__content {
+  display: none;
+}
+
+.projects__slide__image {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.projects__slide__showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.projetcs__slide__header {
+  text-transform: capitalize;
+}
+
+.projetcs__slide__header, .projetcs__slide__text {
+  padding-bottom: 20px;
+}
+
+.button__mobile__description {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  text-transform: capitalize;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.projetcs__slide__description__content {
+  position: absolute;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.projetcs__slide__description__content__showing {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .projects__slide__image {
+    width: 90%;
+  }
+  .projetcs__slides__arrow {
+    display: block;
+  }
+  .projetcs__slide {
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .projetcs__slide__description__content {
+    position: static;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .projects__slide__image__wrapper {
+    display: block;
+    max-height: 100%;
+  }
+  .projetcs__slide__description__content {
+    display: block;
+  }
+  .button__mobile__description {
+    display: none;
+  }
+  .projetcs__slide__description__content__showing {
+    display: none;
+  }
+}
+
+/*Slider!*/
+/*!Iframe*/
+.iframe__background {
+  position: absolute;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.iframe__block {
+  z-index: 101;
+  height: 100%;
+  display: block;
+}
+
+/*Iframe!*/
+/*!Buttons*/
+.res_buttons__container {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  display: none;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  height: 90px;
+  width: 100px;
+  grid-gap: 10px;
+  z-index: 102;
+}
+
+.res_button {
+  display: none;
+  width: 100px;
+  height: 30px;
+  text-transform: capitalize;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 103;
+}
+
+.res_button:hover {
+  text-decoration: underline;
+}
+
+/*Buttons!*/
+/*# sourceMappingURL=style.css.map */

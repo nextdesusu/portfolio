@@ -1,0 +1,145 @@
+/*!Contst*/
+/*Contst!*/
+.completed_projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  grid-gap: 30px;
+}
+
+.completed_projects__mobile {
+  display: none;
+}
+
+.completed_projects__header {
+  text-transform: uppercase;
+}
+
+.completed_projects__description__current {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.completed_projects__description__header {
+  text-transform: uppercase;
+}
+
+.completed_projects__button {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.completed_projects__images__presentation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.completed_projects__image {
+  position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+  .completed_projects {
+    padding-left: 100px;
+    background-image: url("../assets/images/completed__background__up.png");
+    height: 900px;
+  }
+  .completed_projects__description__block {
+    padding: 20px 10px 0 0;
+  }
+  .completed_projects__buttons {
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  .completed_projects__images__presentation {
+    height: 400px;
+  }
+  .completed_projects__header {
+    margin-bottom: 30px;
+    word-spacing: 1440px;
+  }
+  .completed_projects__header::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-size: 10px;
+    position: absolute;
+    background-color: #C9A367;
+    margin-left: 40px;
+    margin-top: 14px;
+  }
+  .completed_projects__text {
+    margin-bottom: 30px;
+  }
+  .completed_projects__buttons {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .completed_projects__button {
+    margin-right: 40px;
+    color: rgba(61, 60, 60, 0.8);
+  }
+  .completed_projects__button:hover {
+    color: #C9A367;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects {
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: none;
+    height: 650px;
+  }
+  .completed_projects__header, .completed_projects__text {
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .completed_projects__header::after, .completed_projects__text::after {
+    display: none;
+  }
+  .completed_projects__mobile {
+    display: block;
+  }
+  .completed_projects__image__mobile {
+    width: 375px;
+    padding: 10px;
+  }
+  .completed_projects__images {
+    display: none;
+  }
+  .completed_projects__description__current {
+    padding: 10px;
+  }
+  .completed_projects__description__block {
+    padding: 10px;
+  }
+  .completed_projects__description__slider {
+    display: none;
+  }
+}
+
+.completed_projects__header, .completed_projects__description__header {
+  color: #C9A367;
+}
+/*# sourceMappingURL=completed_projects.css.map */

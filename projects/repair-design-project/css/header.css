@@ -1,0 +1,81 @@
+/*!Contst*/
+/*Contst!*/
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.nav__logo {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.nav__links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__links__wrapper {
+  padding: 0 0 0 10px;
+}
+
+.nav__links__item {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.nav__phone_number {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .nav__links__item:hover {
+    color: #C9A367;
+  }
+  .nav__phone_number {
+    color: #C9A367;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .nav__links {
+    display: none;
+  }
+  .nav__button {
+    display: none;
+  }
+  .nav__phone_number {
+    color: white;
+  }
+  .header__button {
+    display: none;
+  }
+}
+
+.nav__logo {
+  color: #C9A367;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=header.css.map */

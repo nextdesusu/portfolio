@@ -1,0 +1,117 @@
+.to_goal {
+  background-color: #131313;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 550px 70px 550px 70px;
+  grid-gap: 50px;
+}
+
+.to_goal__header__sml, .to_goal__header__big {
+  text-transform: uppercase;
+}
+
+.to_goal__header__big, .orange {
+  color: #C9A367;
+}
+
+.to_goal__header__big {
+  margin-bottom: 60px;
+  margin-top: 20px;
+  width: 150px;
+}
+
+.to_goal__header__big::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-size: 10px;
+  position: absolute;
+  background-color: #C9A367;
+  margin-left: 40px;
+  margin-top: 14px;
+}
+
+.to_goal__description {
+  position: relative;
+  top: -100px;
+}
+
+.to_goal__line {
+  border-color: #C9A367;
+}
+
+.to_goal__counter {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.to_goal__header__sml {
+  text-align: start;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.to_goal__text {
+  margin-bottom: 150px;
+}
+
+.to_goal__slider__wrapper {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: none;
+  -ms-grid-columns: (1fr)[8];
+      grid-template: none/repeat(8, 1fr);
+  grid-gap: 30px;
+}
+
+.to_goal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.to_goal__list {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.to_goal__item__header__wrapper {
+  display: inline-block;
+}
+
+.to_goal__item__hr {
+  border-color: #C9A367;
+}
+
+.to_goal__image {
+  background-image: url("../assets/images/to_goal__image.png");
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 400px;
+}
+
+@media screen and (max-width: 375px) {
+  .to_goal {
+    display: none;
+  }
+}
+/*# sourceMappingURL=to_goal.css.map */

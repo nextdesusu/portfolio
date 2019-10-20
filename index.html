@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About me</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="avatar">
+        <div class="avatar__image">
+                
+        </div>
+        <div class="avatar__info">
+            <h1 class="avatar__name text__header">ilya bakanov</h1>
+            <a href="https://github.com/nextdesusu" class="link">Github</a>
+            <ul class="avatar__links">
+                <li class="avatar__link__wrapper">
+                    <a href="https://vk.com/id546010818" class="avatar__link link">VK</a>
+                    <a href="mailto:nextdesusu@gmail.com" class="avatar__link link">Email</a>
+                </li>
+                <li class="avatar__link__wrapper">
+                    <a href="" class="avatar__link"></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="education">
+            <div id="list_toggle_block" class="education__header__wrapper">
+                <h2 class="education__header text__header">education</h2>
+                <div id="toggler" class="education__toggler">&lt;</div>
+            </div>
+            <ul id="list_block" class="education__list list__closed">
+                <li class="education__item">
+                    <p class="education__item__name">school</p>
+                    <p class="education__item__years">2004-2015</p>
+                </li>
+                <li class="education__item">
+                    <p class="education__item__name">university</p>
+                    <p class="education__item__years">2015-2020</p>
+                </li>
+                <li class="education__item">
+                    <p class="education__item__name"><span class="text__uppercase">
+                        rss</span>chool courses
+                    </p>
+                    <p class="education__item__years">2019-2020</p>
+                </li>
+            </ul>
+        </section>
+        <section class="projects">
+            <h2 class="projects__header text__header">projects</h2>
+            <div class="projects__slider__wrapper">
+                <div id="arrow_left" class="projetcs__slides__arrow">
+                    &lt;
+                </div>
+                <ul id="slide_list" class="projetcs__slides">
+                    <li class="projetcs__slide projects__slide__showing">
+                        <div class="projetcs__slide__description">
+                            <button data-for="mobile__description1" id="button__mobile__description1" class="button__mobile__description"></button>
+                            <div id="mobile__description1" class="projetcs__slide__description__content">
+                                <h2 class="projetcs__slide__header">
+                                    theaylow
+                                </h2>
+                                <p class="projetcs__slide__text">
+                                    Topics covered in this project is: design of placeholders and videos, shadow-boxes, 
+                                    design for tablets.
+                                </p>
+                                <div class="projetcs__slide__under_text__container">
+                                    <p class="projetcs__slide__under_text">Tap on image to see the project!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__slide__image__wrapper">
+                            <img pathToSrc="projects/theyalow/index.html"
+                                maxWidth="1366px"
+                                minWidth="640px"
+                                id="projects__slide1" 
+                                class="projects__slide__image" 
+                                src="assets/images/slide__image__theyalow.png"
+                            >
+                        </div>
+                    </li>
+                    <li class="projetcs__slide">
+                        <div class="projetcs__slide__description">
+                            <button data-for="mobile__description2" id="button__mobile__description2" class="button__mobile__description"></button>
+                            <div id="mobile__description2" class="projetcs__slide__description__content">
+                                <h2 class="projetcs__slide__header">
+                                    repair-design-project
+                                </h2>
+                                <p class="projetcs__slide__text">
+                                    Topics covered in this project is: design of a slider, 
+                                    forms design, design for smartphones
+                                </p>
+                                <div class="projetcs__slide__under_text__conteainer">
+                                    <p class="projetcs__slide__under_text">Tap on image to see the project!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__slide__image__wrapper">
+                            <img 
+                                pathToSrc="projects/repair-design-project/index.html"
+                                maxWidth="1440px"
+                                minWidth="375px"
+                                id="projects__slide2" class="projects__slide__image" 
+                                src="assets/images/slide__image__repair-design-project.png"
+                            >
+                        </div>
+                    </li>
+                </ul>
+                <div id="arrow_right" class="projetcs__slides__arrow">
+                    &gt;
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
